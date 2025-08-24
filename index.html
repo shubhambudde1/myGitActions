@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My HTML‑Only Website</title>
+  <meta name="description" content="A minimal website made with only HTML." />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>My HTML‑Only Website</h1>
+    <p>Clean. Fast. No CSS. No JavaScript.</p>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- ===== About ===== -->
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        This site is built using <strong>only HTML</strong>. No external stylesheets or scripts.
+        It uses semantic tags so it works well on all devices and screen readers.
+      </p>
+      <p>
+        You can use this as a starter template for portfolios, simple documentation,
+        or a lightweight landing page.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>⚡ Fast and lightweight (just one file)</li>
+        <li>🔍 Accessible semantic HTML tags</li>
+        <li>🔗 In‑page navigation using anchors</li>
+        <li>📧 Simple contact form (mailto)</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Add your images below. Replace the <code>src</code> with your file names in the same folder.</p>
+      <figure>
+        <img src="image1.jpg" alt="Sample image 1" width="300" />
+        <figcaption>Image 1 caption</figcaption>
+      </figure>
+      <figure>
+        <img src="image2.jpg" alt="Sample image 2" width="300" />
+        <figcaption>Image 2 caption</figcaption>
+      </figure>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>Can I add styling?</summary>
+        <p>Yes. If you want to stay HTML‑only, you can use inline attributes like <code>width</code>, <code>height</code>, and basic formatting tags. To keep it strictly HTML, avoid external CSS files or <code>&lt;style&gt;</code> blocks.</p>
+      </details>
+      <details>
+        <summary>Can I make multiple pages?</summary>
+        <p>Yes. Duplicate this file as <code>about.html</code>, <code>contact.html</code>, etc., and link to them with regular anchors.</p>
+      </details>
+      <details>
+        <summary>Does the contact form send directly?</summary>
+        <p>It opens your default email app using a <code>mailto:</code> link. For server‑side handling, you would need a backend.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:you@example.com" method="post" enctype="text/plain">
+        <p>
+          <label for="name">Name</label><br />
+          <input id="name" name="name" type="text" required />
+        </p>
+        <p>
+          <label for="email">Email</label><br />
+          <input id="email" name="email" type="email" required />
+        </p>
+        <p>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+      <p>
+        Or email me directly: <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <hr />
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
+    <p>
+      <a href="#top" aria-label="Back to top">Back to top ↑</a>
+    </p>
+  </footer>
+</body>
+</html>
